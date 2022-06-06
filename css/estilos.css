@@ -1,0 +1,244 @@
+* {
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 1rem;
+    height: 100%;
+}
+
+body, header, main, footer {
+    /* border: 3px green solid; */
+    min-height: 50px;
+    margin: 0.5rem
+}
+
+body {
+    background-color: #F9C3CE;
+    /* background-color: grey; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1rem 0.5rem;
+}
+
+main {
+    min-height: 200px;
+    overflow: auto;
+    background-color: white;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+}
+
+header {
+    background: white;
+    box-shadow: 0 0 0.5rem rgb(83 78 76 / 50%);
+}
+
+footer {
+    background: rgb(255, 255, 255);
+}
+
+/* contenido ppal */
+main>div {
+   /* border: 2px red solid; */
+    min-height: 180px;
+    margin: 1.5rem;
+    height: auto;
+    float: left; 
+    width: 90%;
+    max-width: 1200px;
+    padding: 5px 0;
+    overflow: hidden; 
+}
+/* los div que estan directos con el main, se les aplica esta clase */
+
+main>aside {
+    border: 2px pink solid; 
+    min-height: 598px;
+    margin: 1.5rem;
+    min-width: 30%;
+    float: left;
+    width: auto;
+}
+
+.secciones {
+   /* border: 2px blue solid; */
+    min-height: 50px;
+    margin: 0.5rem;
+}
+
+.secciones article {
+   /* border: 1px rgb(195, 0, 255) solid; */
+    margin: 0.5rem;
+    min-height: 20px;
+    padding: 0.5rem 0 0.2rem 0.15rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+
+/* logo y menu */
+.header-logo {
+    width: 100px;
+    display: inline-block;
+    margin: 1rem 5rem 0.5rem 4rem;
+}
+
+.header-menubar {
+    border: 2px #F78181 solid;
+    left: auto;
+    position: relative; 
+    top: auto;
+    width: auto;
+    display: inline-block;
+    margin: 0 5rem 3.5rem 6rem;
+    font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+    box-shadow: 1px 2px 1px 1px gray;
+}
+
+.header-menubar ul {
+    list-style: none;
+}
+
+.header-menubar li {
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 1.5rem 0;
+}
+
+.header-menubar a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-menubar a:hover {
+    color: purple;
+    text-decoration: underline;
+}
+
+.header-menubar li a {
+    font-size: 1.2rem;
+    background: transparent;
+}
+
+.titulo-final {
+    color: #4C0B5F;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.slider {
+    width: 580px;
+    height: 580px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    width: 400%;
+
+    animation: cambio 8s infinite alternate ease-in-out;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height:100%;
+}
+
+@keyframes cambio {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0;
+    }
+}
+
+
+table {
+    width: 800px;
+    height: 400px;
+    border: #4C0B5F solid;
+    font-size: 'Montserrat', sans-serif;
+    font-size: large;
+}
+
+
+td {
+    border: 0.1rem #4C0B5F solid;
+    text-align: center; 
+    width: 30px;
+}
+
+.formulario {
+    width: 900px;
+    background: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    color: black;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+
+.contenido-all {
+    width: 100%;
+    max-width: 1860px;
+    margin: auto;
+    padding: 10px;
+    background: #F78181;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.contenido-all img {
+    width: 80px;
+    height: 80px;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
